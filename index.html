@@ -66,7 +66,7 @@
         <h1>PLS SWIKARA</h1>
 
         <!-- Audio element to play the song -->
-        <audio id="song" controls>
+        <audio id="song" controls autoplay>  <!-- autoplay added -->
             <source src="PLS SWIKARA na.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
@@ -131,15 +131,6 @@
 
     </div>
 
-    <script>
-        // Optional: Try autoplay but most modern browsers require user interaction for this
-        window.onload = function() {
-            var audio = document.getElementById('song');
-            audio.play().catch(function(error) {
-                console.log("Autoplay prevented: ", error);
-            });
-        };
-    </script>
-
+    
 </body>
 </html>
